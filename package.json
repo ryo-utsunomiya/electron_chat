@@ -2,9 +2,12 @@
   "name": "electron_chat",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": ".tmp/main",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --out-dir .tmp src",
+    "watch": "babel --watch --out-dir .tmp src",
+    "start": "electron ."
   },
   "author": "",
   "license": "ISC",
